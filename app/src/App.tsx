@@ -1,10 +1,13 @@
-import { HelloWorld } from "./components/HelloWorld";
+import CustomAlert from "./components/CustomAlert";
+import theme from "./theme";
+
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
     return (
-        <div className="App">
-            <HelloWorld />
-        </div>
+        <ChakraProvider theme={theme}>
+            <CustomAlert />
+        </ChakraProvider>
     );
 }
 

@@ -1,8 +1,8 @@
+import HelloWorld from "../components/HelloWorld";
 import { render, screen } from "@testing-library/react";
-import App from "./App";
 
 test("Should render correctly", () => {
-    render(<App />);
+    render(<HelloWorld />);
 
     const sut = screen.getByText("Hello World!");
 
